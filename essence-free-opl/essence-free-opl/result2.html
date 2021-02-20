@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Qadem</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/color-switcher.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">    
+
+    <link href="css/canvas.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/40a7d451fd.js" crossorigin="anonymous"></script>
+    <style>
+      .dropbtn {
+        
+        color: FE5A17;
+        font-size: 20px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+      .container .progress {
+  margin: 0 auto;
+  height: 23px;
+  width: 400px;
+  
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+  width: 50%;
+  background-color: #FE5A17;
+  border-radius: 4px;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color; 
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       https://css-tricks.com/webkit-sibling-bug/
+ */
+
+#five:checked ~ .progress > .progress-bar {
+  width: 5%;
+  background-color: #f63a0f;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #f27011;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #f2b01e;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #f2d31b;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #86e01e;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+
+      </style>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  
+  <body>
+    <!-- Header Section Start -->
+    <header id="slider-area">  
+      <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white rtll">
+        <div class="container">          
+          <a class="navbar-brand pr-100" href="index.html"><img src="/essence-free-opl/essence-free-opl/img/قادم.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav pr-60 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll"  style="font-size: 20px;" href="#services">مجتمعات قادم</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#features">خبراء قادم</a>
+              </li>                            
+              <li class="nav-item">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#portfolios">شريك ابداعي</a>
+              </li>            
+             
+              <li class="nav-item pr-100 ">
+                <div class="dropdown">
+                  <a class="  navbar-brand dropbtn" href="index.html"><i class="fas fa-user"></i></a>
+                  <div class="dropdown-content rtll">
+                    <a href="#" style="text-align: right;">مكتبي</a>
+                    <a href="#" style="text-align: right;">تسجيل خروج</a>
+                  </div>
+                </div>
+              </li> 
+              <li class="nav-item pr-20">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#">مها البراك</a>
+              </li> 
+
+ 
+                         
+            </ul>              
+          </div>
+        </div>
+      </nav> 
+
+
+    </header>
+
+
+      <div class="container pt-80 pb-30">
+        <div class="section-header">          
+            <h4 class="" style="color: #f76429; padding-bottom: 0%;"> نموذج المزيج التسويقي</h4>
+          </div>
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="row rtll">
+        <div class="col-lg-4 col-md-6 col-xs-12 mr-160 ml-140">
+          <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+            <div class="icon color-4">
+                <i class="fas fa-industry"></i>
+            </div>
+            <h4>المنتج</h4>
+            <p> هو أداة لإرضاء العميل وتلبية حاجاته. قد يكون المنتج محسوسًا، مثل: بضاعة حقيقيّة ماديّة، أو قد يكون معنويًّا، مثل: خدمة أو استشارة أو اقتراح. بالطبع فإن تهيئة المنتج ليكون أداة تسويق بحدّ ذاته لا يقتصر على كفاءة ونوعيّة المنتج فحسب، وإنما هنالك قائمة طويلة لعناصر المنتج التي يجب عليك الاعتناء بها جيّدًا.
+
+            </p>
+            <div class="form-group">
+                <textarea class="form-control" style="text-align:right;" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>      
+                
+          </div>
+        </div>
+       
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon color-3">
+              <i class="lni-stats-up"></i>
+            </div>
+            <h4>السعر</h4>
+            <p class="pb-50">يجب أن يعكس سعر المنتج سمات السوق المستهدف بأفضل ما يمكن ، مع وضعه في المستوى الصحيح ، ولكن لا يزال يحقق ربحًا. هذا سيعتمد على عوامل منها حصتها في السوق والمنافسة.</p>
+            <div class="form-group">
+                <textarea class="form-control" style="text-align:right;" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>      
+              
+          </div>
+        </div>
+        
+      </div>
+      <div class="row rtll">
+        <div class="col-lg-4 col-md-6 col-xs-12 mr-160 ml-140">
+          <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+            <div class="icon color-1">
+                <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h4>المكان</h4>
+            <p class="pb-10">يمثّل المكان الذي سيقصده العميل لطلب أو شراء خدمتك أو منتجك، قد يكون حقيقيًا، مثل: سلسلة متاجر معيّنة، أو قد يكون رقميًّا، مثل: المتاجر الإلكترونيّة. أيًا كان نوع مكان المنتج الذي ستختاره يجب أن يكون مناسبًا وأن يعكس أسلوبًا فريدًا في عرض المنتجات ولفت نظر العملاء إليها.</p>
+            <div class="form-group">
+                <textarea class="form-control" style="text-align:right;" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>      
+              
+          </div>
+        </div>
+       
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon color-2">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <h4>الترويج</h4>
+  <p class="pb-20"> كل هذا يتعلق بتطوير الرسائل ، القدرة على توصيل ما تقوم به علامتك التجارية والمنتج وتقديمه بأكثر الطرق فعالية. يرتبط الترويج ارتباطًا وثيقًا بالنقطة أعلاه ، وفي الواقع ، لا يمكن للمرء أن يكون فعالًا دون الآخر.</p>
+            <div class="form-group">
+                <textarea class="form-control" style="text-align:right;" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>      
+                
+          </div>
+        </div>
+        
+      </div>
+      <a href="result3.html" class="btn  btn-common btn-effect wow fadeInRight ml-450  "  data-wow-delay="0.9s">الخطوة التالية</a>
+<br>
+<br>
+
+
+<!-- 
+      <a href="#" class="btn  btn-common btn-effect wow fadeInRight ml-500 "  data-wow-delay="0.9s">الخطوة التالية</a> -->
+
+<!-- Services Section End -->
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/color-switcher.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>     
+    <script src="js/wow.js"></script> 
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Qadem</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/color-switcher.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">    
+
+    <link href="css/canvas.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/40a7d451fd.js" crossorigin="anonymous"></script>
+    <style>
+      .dropbtn {
+        
+        color: FE5A17;
+        font-size: 20px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+      .container .progress {
+  margin: 0 auto;
+  height: 23px;
+  width: 400px;
+  
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+  width: 85%;
+  background-color: #FE5A17;
+  border-radius: 4px;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       https://css-tricks.com/webkit-sibling-bug/
+ */
+
+#five:checked ~ .progress > .progress-bar {
+  width: 5%;
+  background-color: #f63a0f;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #f27011;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #f2b01e;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #f2d31b;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #86e01e;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+
+/*===== OUR SERVICE =====*/
+.our-services-tab .nav {
+  border-bottom: 2px solid #dedede4f; }
+  @media (max-width: 767px) {
+    .our-services-tab .nav {
+      border-bottom: 0; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .our-services-tab .nav {
+      border-bottom: 2px solid #dedede4f; } }
+  @media (max-width: 767px) {
+    .our-services-tab .nav .nav-item {
+      width: 50%; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .our-services-tab .nav .nav-item {
+      width: auto; } }
+  .our-services-tab .nav .nav-item a {
+    color: #798795;
+    padding: 17px 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .our-services-tab .nav .nav-item a {
+        padding: 17px 15px; } }
+    @media (max-width: 767px) {
+      .our-services-tab .nav .nav-item a {
+        padding: 17px 15px;
+        border-bottom: 2px solid #dedede4f; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .our-services-tab .nav .nav-item a {
+        padding: 17px 10px;
+        border-bottom: 0; } }
+    .our-services-tab .nav .nav-item a::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #f14836;
+      left: 0;
+      bottom: -2px;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+    .our-services-tab .nav .nav-item a i {
+      font-size: 50px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .our-services-tab .nav .nav-item a i {
+          font-size: 40px; } }
+      @media (max-width: 767px) {
+        .our-services-tab .nav .nav-item a i {
+          font-size: 34px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .our-services-tab .nav .nav-item a i {
+          font-size: 28px; } }
+    .our-services-tab .nav .nav-item a span {
+      font-size: 14px;
+      font-family: "Nunito", sans-serif;
+      font-weight: 500;
+      padding-left: 15px; }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .our-services-tab .nav .nav-item a span {
+          padding-left: 10px; } }
+    .our-services-tab .nav .nav-item a.active {
+      color: #f14836; }
+      .our-services-tab .nav .nav-item a.active::before {
+        opacity: 1; }
+.our-services-tab .our-services-content .services-title {
+  font-size: 40px; }
+  @media (max-width: 767px) {
+    .our-services-tab .our-services-content .services-title {
+      font-size: 22px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .our-services-tab .our-services-content .services-title {
+      font-size: 26px; } }
+  .our-services-tab .our-services-content .services-title span {
+    font-weight: 400;
+    display: contents; }
+.our-services-tab .our-services-content .text {
+  margin-top: 35px; }
+.our-services-tab .our-services-content .our-services-progress .circles-text {
+  font-size: 24px !important;
+  font-weight: 700;
+  color: #222;
+  font-family: "Nunito", sans-serif; }
+.our-services-tab .our-services-content .our-services-progress .progress-content {
+  padding-left: 30px; }
+  .our-services-tab .our-services-content .our-services-progress .progress-content .progress-title {
+    font-size: 18px; }
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.columnn {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #833AB4;
+}
+.tumblr span {
+	background-color: #34526f;
+}
+.instagram span {
+	background-color: #517fa4;
+}
+.youtube span {
+	background-color: #bb0000;
+}
+.pinterest span {
+	background-color: #cb2027;
+}
+
+
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-tumblr {
+	color: #34526f;
+}
+.icon-button .icon-google-plus {
+	color: #833AB4;
+}
+.icon-button .fa-instagram {
+	color: #517fa4;
+}
+.icon-button .fa-youtube {
+	color: #833AB4;
+}
+.icon-button .fa-pinterest {
+	color: #833AB4;
+}
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
+
+
+      </style>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  
+  <body>
+    <!-- Header Section Start -->
+    <header id="slider-area">  
+      <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white rtll">
+        <div class="container">          
+          <a class="navbar-brand pr-100" href="index.html"><img src="/essence-free-opl/essence-free-opl/img/قادم.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav pr-60 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll"  style="font-size: 20px;" href="#services">مجتمعات قادم</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#features">خبراء قادم</a>
+              </li>                            
+              <li class="nav-item">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#portfolios">شريك ابداعي</a>
+              </li>            
+             
+              <li class="nav-item pr-100 ">
+                <div class="dropdown">
+                  <a class="  navbar-brand dropbtn" href="index.html"><i class="fas fa-user"></i></a>
+                  <div class="dropdown-content rtll">
+                    <a href="#" style="text-align: right;">مكتبي</a>
+                    <a href="#" style="text-align: right;">تسجيل خروج</a>
+                  </div>
+                </div>
+              </li> 
+              <li class="nav-item pr-20">
+                <a class="nav-link page-scroll" style="font-size: 20px;" href="#">مها البراك</a>
+              </li> 
+
+ 
+                         
+            </ul>              
+          </div>
+        </div>
+      </nav> 
+
+
+    </header>
+
+
+      <div class="container pt-120">
+        <div class="section-header">          
+            <h4 class="" style="color: #f76429; padding-bottom: 0%;"> الاحتياجات والاجراءات</h4>
+          </div>
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      
+      
+<div class="row pb-140">
+    <div class="column" style="text-align: center;">
+        <img src="/essence-free-opl/essence-free-opl/img/yourIperance.png" alt="">
+    </div>
+    <div class="columnn pt-120 mr-0" style="text-align: center;">
+      <h2 class="pr-70 pt-80">تواجدك الرقمي</h2>
+      <p class="pr-80 pb-10" style="font-size: 20px;">تأكد من توفر حسابات في حسابات التواصل الاجتماعي بنفس أسمك التجاري</p>
+        
+      <a href="#" class="icon-button twitter"><i class="fab fa-twitter" style="color:lightgrey"></i><span></span></a>
+<a href="#" class="icon-button facebook"><i class="fab fa-facebook" style="color:lightgrey"></i><span></span></a>
+<a href="#" class="icon-button google-plus"><i class="fab fa-instagram" style="color:lightgrey"></i><span></span></a>
+<a href="#" class="icon-button "><span></span></a>
+
+
+
+
+    </div>
+  </div>
+        
+    <!--====== OUR SERVICE PART START ======-->
+ 
+    <!--====== OUR SERVICE PART ENDS ======-->
+    
+    <a href="Congrgaltions2.html" class="btn  btn-common btn-effect wow fadeInUp ml-500"  data-wow-delay="0.9s">انشئ صفحتك الرقمية</a> 
+    <br>
+    <br>
+    <br>   
+<!-- Services Section End -->
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/color-switcher.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>     
+    <script src="js/wow.js"></script> 
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
